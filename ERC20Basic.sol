@@ -1,6 +1,5 @@
 pragma solidity ^0.4.26;
 
-// File: zeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol
 
 /**
  * @title ERC20Basic
@@ -14,7 +13,6 @@ contract ERC20Basic {
   event Transfer(address indexed from, address indexed to, uint256 value);
 }
 
-// File: zeppelin-solidity/contracts/token/ERC20/BasicToken.sol
 
 /**
  * @title Basic token
@@ -59,7 +57,6 @@ contract BasicToken is ERC20Basic {
 
 }
 
-// File: zeppelin-solidity/contracts/token/ERC20/ERC20.sol
 
 /**
  * @title ERC20 interface
@@ -72,7 +69,6 @@ contract ERC20 is ERC20Basic {
   event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// File: zeppelin-solidity/contracts/token/ERC20/StandardToken.sol
 
 /**
  * @title Standard ERC20 token
@@ -169,7 +165,6 @@ contract StandardToken is ERC20, BasicToken {
 
 }
 
-// File: zeppelin-solidity/contracts/ownership/Ownable.sol
 
 /**
  * @title Ownable
@@ -211,7 +206,6 @@ contract Ownable {
 
 }
 
-// File: zeppelin-solidity/contracts/lifecycle/Pausable.sol
 
 /**
  * @title Pausable
@@ -257,7 +251,6 @@ contract Pausable is Ownable {
   }
 }
 
-// File: zeppelin-solidity/contracts/token/ERC20/PausableToken.sol
 
 /**
  * @title Pausable token
@@ -286,7 +279,6 @@ contract PausableToken is StandardToken, Pausable {
   }
 }
 
-// File: contracts/CyberMilesToken.sol
 
 contract TestToken is PausableToken {
 
